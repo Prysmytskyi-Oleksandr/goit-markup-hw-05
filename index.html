@@ -71,7 +71,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </section>
       </div>
       <!--Характеристика компании-->
@@ -141,22 +141,31 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
 
         <ul class="sample-works">
-          <li>
+          <li class="sample">
             <img
               src="images/algorytm.jpg"
               alt="Составление алгоритма"
               width="370"
             />
+            <div class="sample-name">
+              <h3 class="name">Десктопні додатки</h3>
+            </div>
           </li>
-          <li>
+          <li class="sample">
             <img
               src="images/mob-app.jpg"
               alt="Мобильное приложение"
               width="370"
             />
+            <div class="sample-name">
+              <h3 class="name">Мобільні додатки</h3>
+            </div>
           </li>
-          <li>
+          <li class="sample">
             <img src="images/color-design.jpg" alt="Дизайн цвета" width="370" />
+            <div class="sample-name">
+              <h3 class="name">Дизайнерські рішення</h3>
+            </div>
           </li>
                   </ul>
 
@@ -449,5 +458,19 @@
 
     </div>
     </footer>
+
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="backdrop-button" data-modal-close>
+          <svg class="backdrop-button-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close-black" ></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+     <script src="./js/modal.js"></script>
   </body>
 </html>
